@@ -16,13 +16,13 @@ function App() {
   const [people, setPeople] = useState<IState["people"]>([
     {
     name: 'Lebron James',
-    url: '',
+    url: 'https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png',
     age: 36,
     note: 'Allergic to staying on the same team.'
   },
   {
     name: 'Kobe Bryant',
-    url: '',
+    url: 'https://fullpresscoverage.com/wp-content/uploads/2020/01/101524695-457220551.jpg',
     age: 36,
    },
 
@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <h1>People invited to the party</h1>
-      <List/>
+      <List people={people}/>
     </div>
   );
 }
